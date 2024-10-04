@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Redirection Example</title>
+    <style>
+        /* Set body layout and centering */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+                        url('https://cdn.britannica.com/84/203584-050-57D326E5/speed-internet-technology-background.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Comic;
+            color: white;
+            text-align: center;
+        }
+
+        /* Container for the content (title + buttons) */
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Title styles with animation */
+        h1 {
+            color: #ffffffdf;
+            font-size: 52px;
+            margin-bottom: 20px;
+            animation: slide 4s infinite alternate; /* Animation for left-right movement */
+            letter-spacing: 1px;
+            margin-bottom: 80px;
+        }
+
+        /* Button styles */
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            width: 300px;
+            color: white;
+            background-color: black;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid black;
+        }
+
+        /* Keyframes for the slide animation */
+        @keyframes slide {
+            0% {
+                transform: translateX(-20px);
+            }
+            100% {
+                transform: translateX(20px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container for the title and buttons -->
+    <div id="container">
+        <!-- Title with animation -->
+        <h1>Visual Explorer Algorithm</h1>
+
+        <!-- Button 1 -->
+        <button class="search"  onclick="window.location.href='index1.html'">Searching Algo</button>
+        <!-- <button>
+            <a href="index.4.html" style="color:#fff;">Search Algo</a></div>
+        </button> -->
+
+        <!-- Button 2 -->
+        <button onclick="window.location.href='index2.html'">Sorting Algo</button>
+    </div>
+
+</body>
+</html>

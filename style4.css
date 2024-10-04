@@ -1,0 +1,28 @@
+#array-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 20px;
+}
+
+.bar {
+  width: 20px;
+  height: 0px;
+  background-color: #aaa;
+  margin: 2px;
+  display: inline-block;
+  transform: scaleY(-1); /* flip the bars upside down */
+  transition: background-color 0.5s; /* added transition effect */
+  position: relative; /* for tooltip positioning */
+}
+
+.bar:hover {
+  background-color: #666;
+}
+
+#result-section {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
